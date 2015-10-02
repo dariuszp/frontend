@@ -64,70 +64,7 @@
     align-content: stretch;
   }
 
-  @media screen and (max-width: 767px) {
-    &.m-reverse {
-      flex-direction: column-reverse;
-    }
-
-    &.m-columns {
-      flex-direction: row;
-
-      &.m-reverse {
-        flex-direction: row-reverse;
-      }
-    }
-
-    &.m-grow {
-      flex-grow: 1;
-      @for $i from 2 through 12 {
-        &.m-grow-#{$i} {
-          flex-grow: $i;
-        }
-      }
-    }
-
-    &.m-place-start {
-      justify-content: flex-start;
-    }
-
-    &.m-place-end {
-      justify-content: flex-end;
-    }
-
-    &.m-place-center {
-      justify-content: center;
-    }
-
-    &.m-place-spread {
-      justify-content: space-between;
-    }
-
-    &.m-place-equal {
-      justify-content: space-around;
-    }
-
-    &.m-align-start {
-      align-content: flex-start;
-    }
-
-    &.m-align-end {
-      align-content: flex-end;
-    }
-
-    &.m-align-center {
-      align-content: center;
-    }
-
-    &.m-align-baseline {
-      align-content: center;
-    }
-
-    &.m-stretch {
-      align-content: stretch;
-    }
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-device-width: 768px) {
     &.t-reverse {
       flex-direction: column-reverse;
     }
@@ -190,7 +127,7 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-device-width: 1200px) {
     &.d-reverse {
       flex-direction: column-reverse;
     }
@@ -292,42 +229,7 @@
     align-self: stretch;
   }
 
-  @media screen and (max-width: 767px) {
-    &.m-equal {
-      flex-basis: 0;
-    }
-
-    &.m-grow {
-      flex-grow: 1;
-      @for $i from 2 through 12 {
-        &.m-grow-#{$i} {
-          flex-grow: $i;
-        }
-      }
-    }
-
-    &.m-align-start {
-      align-self: flex-start;
-    }
-
-    &.m-align-end {
-      align-self: flex-end;
-    }
-
-    &.m-align-center {
-      align-self: center;
-    }
-
-    &.m-align-baseline {
-      align-self: center;
-    }
-
-    &.m-stretch {
-      align-self: stretch;
-    }
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-device-width: 768px) {
     &.t-equal {
       flex-basis: 0;
     }
@@ -362,7 +264,7 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-device-width: 1200px) {
     &.d-equal {
       flex-basis: 0;
     }
