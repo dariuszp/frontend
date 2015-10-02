@@ -1,15 +1,21 @@
+@import "variables";
+
 .container {
   display: flex;
 
-  .reverse {
+  &.reverse {
     flex-direction: row-reverse;
   }
 
-  .vertical {
+  &.vertical {
     flex-direction: column;
 
-    .reverse {
+    &.reverse {
       flex-direction: column-reverse;
     }
   }
+}
+
+@for $i from 1 through 12 {
+  .item-#{$i} { width: 2em * $i; }
 }

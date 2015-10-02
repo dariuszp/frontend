@@ -4,7 +4,9 @@
 @import "grid";
 
 body {
-  font: $font-size;
-  color: $font-color;
+  font-family: $text-font-family;
+  font-size: $text-font-size;
+  color: $text-font-color;
+  margin: 0;
 }
 

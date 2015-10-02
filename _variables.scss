@@ -1,2 +1,9 @@
-$font-size: 16px;
-$font-color: #222222;
+// Grid related variables
+
+$grid-column-limit: 12;
+
+// Basic look
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,700italic,400italic);
+$text-font-size: 16px;
+$text-font-color: #222222;
+$text-font-family: 'Roboto', sans-serif;

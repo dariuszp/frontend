@@ -1,12 +1,52 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,700italic,400italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,700italic,400italic);
 .container {
   display: flex; }
-  .container .reverse {
+  .container.reverse {
     flex-direction: row-reverse; }
-  .container .vertical {
+  .container.vertical {
     flex-direction: column; }
-    .container .vertical .reverse {
+    .container.vertical.reverse {
       flex-direction: column-reverse; }
 
+.item-1 {
+  width: 2em; }
+
+.item-2 {
+  width: 4em; }
+
+.item-3 {
+  width: 6em; }
+
+.item-4 {
+  width: 8em; }
+
+.item-5 {
+  width: 10em; }
+
+.item-6 {
+  width: 12em; }
+
+.item-7 {
+  width: 14em; }
+
+.item-8 {
+  width: 16em; }
+
+.item-9 {
+  width: 18em; }
+
+.item-10 {
+  width: 20em; }
+
+.item-11 {
+  width: 22em; }
+
+.item-12 {
+  width: 24em; }
+
 body {
-  font: 16px;
-  color: #222222; }
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #222222;
+  margin: 0; }
