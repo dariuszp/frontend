@@ -3,6 +3,67 @@
   flex-wrap: wrap;
   flex-direction: column;
 
+  &.reverse {
+    flex-direction: column-reverse;
+  }
+
+  &.columns {
+    flex-direction: row;
+
+    &.reverse {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &.grow {
+    flex-grow: 1;
+    @for $i from 2 through 12 {
+      &.grow-#{$i} {
+        flex-grow: $i;
+      }
+    }
+  }
+
+  &.place-start {
+    justify-content: flex-start;
+  }
+
+  &.place-end {
+    justify-content: flex-end;
+  }
+
+  &.place-center {
+    justify-content: center;
+  }
+
+  &.place-spread {
+    justify-content: space-between;
+  }
+
+  &.place-equal {
+    justify-content: space-around;
+  }
+
+  &.align-start {
+    align-content: flex-start;
+  }
+
+  &.align-end {
+    align-content: flex-end;
+  }
+
+  &.align-center {
+    align-content: center;
+  }
+
+  &.align-baseline {
+    align-content: center;
+  }
+
+  &.stretch {
+    align-content: stretch;
+  }
+
   @media screen and (max-width: 767px) {
     &.m-reverse {
       flex-direction: column-reverse;
@@ -130,68 +191,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    &.reverse {
-      flex-direction: column-reverse;
-    }
-
-    &.columns {
-      flex-direction: row;
-
-      &.reverse {
-        flex-direction: row-reverse;
-      }
-    }
-
-    &.grow {
-      flex-grow: 1;
-      @for $i from 2 through 12 {
-        &.grow-#{$i} {
-          flex-grow: $i;
-        }
-      }
-    }
-
-    &.place-start {
-      justify-content: flex-start;
-    }
-
-    &.place-end {
-      justify-content: flex-end;
-    }
-
-    &.place-center {
-      justify-content: center;
-    }
-
-    &.place-spread {
-      justify-content: space-between;
-    }
-
-    &.place-equal {
-      justify-content: space-around;
-    }
-
-    &.align-start {
-      align-content: flex-start;
-    }
-
-    &.align-end {
-      align-content: flex-end;
-    }
-
-    &.align-center {
-      align-content: center;
-    }
-
-    &.align-baseline {
-      align-content: center;
-    }
-
-    &.stretch {
-      align-content: stretch;
-    }
-
-    &.reverse {
+    &.d-reverse {
       flex-direction: column-reverse;
     }
 
@@ -259,6 +259,39 @@
   flex-basis: inherit;
   flex-grow: inherit;
 
+  &.equal {
+    flex-basis: 0;
+  }
+
+  &.grow {
+    flex-grow: 1;
+    @for $i from 2 through 12 {
+      &.grow-#{$i} {
+        flex-grow: $i;
+      }
+    }
+  }
+
+  &.align-start {
+    align-self: flex-start;
+  }
+
+  &.align-end {
+    align-self: flex-end;
+  }
+
+  &.align-center {
+    align-self: center;
+  }
+
+  &.align-baseline {
+    align-self: center;
+  }
+
+  &.stretch {
+    align-self: stretch;
+  }
+
   @media screen and (max-width: 767px) {
     &.m-equal {
       flex-basis: 0;
@@ -290,40 +323,6 @@
     }
 
     &.m-stretch {
-      align-self: stretch;
-    }
-
-
-    &.m-d-equal {
-      flex-basis: 0;
-    }
-
-    &.m-d-grow {
-      flex-grow: 1;
-      @for $i from 2 through 12 {
-        &.m-d-grow-#{$i} {
-          flex-grow: $i;
-        }
-      }
-    }
-
-    &.m-d-align-start {
-      align-self: flex-start;
-    }
-
-    &.m-d-align-end {
-      align-self: flex-end;
-    }
-
-    &.m-d-align-center {
-      align-self: center;
-    }
-
-    &.m-d-align-baseline {
-      align-self: center;
-    }
-
-    &.m-d-stretch {
       align-self: stretch;
     }
   }
@@ -361,77 +360,9 @@
     &.t-stretch {
       align-self: stretch;
     }
-
-
-    &.t-d-equal {
-      flex-basis: 0;
-    }
-
-    &.t-d-grow {
-      flex-grow: 1;
-      @for $i from 2 through 12 {
-        &.t-d-grow-#{$i} {
-          flex-grow: $i;
-        }
-      }
-    }
-
-    &.t-d-align-start {
-      align-self: flex-start;
-    }
-
-    &.t-d-align-end {
-      align-self: flex-end;
-    }
-
-    &.t-d-align-center {
-      align-self: center;
-    }
-
-    &.t-d-align-baseline {
-      align-self: center;
-    }
-
-    &.t-d-stretch {
-      align-self: stretch;
-    }
   }
 
   @media screen and (min-width: 1200px) {
-    &.equal {
-      flex-basis: 0;
-    }
-
-    &.grow {
-      flex-grow: 1;
-      @for $i from 2 through 12 {
-        &.grow-#{$i} {
-          flex-grow: $i;
-        }
-      }
-    }
-
-    &.align-start {
-      align-self: flex-start;
-    }
-
-    &.align-end {
-      align-self: flex-end;
-    }
-
-    &.align-center {
-      align-self: center;
-    }
-
-    &.align-baseline {
-      align-self: center;
-    }
-
-    &.stretch {
-      align-self: stretch;
-    }
-
-
     &.d-equal {
       flex-basis: 0;
     }
