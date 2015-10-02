@@ -6,13 +6,30 @@
     <link rel="stylesheet" href="style.css">
     <style>
         .container {
-            background: #ccc;
+            background: #dedede;
         }
+
+        .box.b1, .box.b2, .box.b3 {
+            color: white;
+            padding: 10px;
+        }
+        .b1 { background: red; }
+        .b2 { background: green; }
+        .b3 { background: blue; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Hello world!</h1>
+        <div class="b1 box grow">
+            <h2>Box 1</h2>
+        </div>
+        <div class="b2 box grow flexible">
+            <h2>Box 2</h2>
+            <p>This should take more space than content on the left and right.<br>That's because multiple lines.</p>
+        </div>
+        <div class="b3 box grow">
+            <h2>Box 3</h2>
+        </div>
     </div>
 
     <script src="main.js"></script>

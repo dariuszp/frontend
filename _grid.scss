@@ -2,6 +2,7 @@
 
 .container {
   display: flex;
+  flex-wrap: wrap;
 
   &.reverse {
     flex-direction: row-reverse;
@@ -16,6 +17,23 @@
   }
 }
 
-@for $i from 1 through 12 {
-  .item-#{$i} { width: 2em * $i; }
+
+.box {
+  flex-basis: 0;
+
+  &.flexible {
+    flex-basis: auto;
+  }
+
+  &.grow {
+    flex-grow: 1;
+  }
+  @for $i from 1 through 12 {
+    &.grow-#{$i} {
+      flex-grow: $i;
+    }
+    &.shrink-#{$i} {
+      flex-shring: $i;
+    }
+  }
 }
