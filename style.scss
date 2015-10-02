@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+@import "variables";
+@import "grid";
+
+body {
+  font: $font-size;
+  color: $font-color;
+}
+

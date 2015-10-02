@@ -1,0 +1,12 @@
+.container {
+  display: flex; }
+  .container .reverse {
+    flex-direction: row-reverse; }
+  .container .vertical {
+    flex-direction: column; }
+    .container .vertical .reverse {
+      flex-direction: column-reverse; }
+
+body {
+  font: 16px;
+  color: #222222; }
