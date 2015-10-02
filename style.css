@@ -9,8 +9,6 @@
     flex-direction: row; }
     .container.columns.reverse {
       flex-direction: row-reverse; }
-  .container.equal {
-    flex-basis: 0; }
   .container.grow {
     flex-grow: 1; }
     .container.grow.grow-2 {
@@ -35,6 +33,26 @@
       flex-grow: 11; }
     .container.grow.grow-12 {
       flex-grow: 12; }
+  .container.place-start {
+    justify-content: flex-start; }
+  .container.place-end {
+    justify-content: flex-end; }
+  .container.place-center {
+    justify-content: center; }
+  .container.place-spread {
+    justify-content: space-between; }
+  .container.place-equal {
+    justify-content: space-around; }
+  .container.align-start {
+    align-content: flex-start; }
+  .container.align-end {
+    align-content: flex-end; }
+  .container.align-center {
+    align-content: center; }
+  .container.align-baseline {
+    align-content: center; }
+  .container.stretch {
+    align-content: stretch; }
 
 .box {
   flex-basis: inherit;
@@ -65,6 +83,16 @@
       flex-grow: 11; }
     .box.grow.grow-12 {
       flex-grow: 12; }
+  .box.align-start {
+    align-self: flex-start; }
+  .box.align-end {
+    align-self: flex-end; }
+  .box.align-center {
+    align-self: center; }
+  .box.align-baseline {
+    align-self: center; }
+  .box.stretch {
+    align-self: stretch; }
 
 body {
   font-family: "Roboto", sans-serif;

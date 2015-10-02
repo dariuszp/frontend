@@ -17,10 +17,6 @@
     }
   }
 
-  &.equal {
-    flex-basis: 0;
-  }
-
   &.grow {
     flex-grow: 1;
     @for $i from 2 through 12 {
@@ -28,6 +24,46 @@
         flex-grow: $i;
       }
     }
+  }
+
+  &.place-start {
+    justify-content: flex-start;
+  }
+
+  &.place-end {
+    justify-content: flex-end;
+  }
+
+  &.place-center {
+    justify-content: center;
+  }
+
+  &.place-spread {
+    justify-content: space-between;
+  }
+
+  &.place-equal {
+    justify-content: space-around;
+  }
+
+  &.align-start {
+    align-content: flex-start;
+  }
+
+  &.align-end {
+    align-content: flex-end;
+  }
+
+  &.align-center {
+    align-content: center;
+  }
+
+  &.align-baseline {
+    align-content: center;
+  }
+
+  &.stretch {
+    align-content: stretch;
   }
 }
 
@@ -47,5 +83,25 @@
         flex-grow: $i;
       }
     }
+  }
+
+  &.align-start {
+    align-self: flex-start;
+  }
+
+  &.align-end {
+    align-self: flex-end;
+  }
+
+  &.align-center {
+    align-self: center;
+  }
+
+  &.align-baseline {
+    align-self: center;
+  }
+
+  &.stretch {
+    align-self: stretch;
   }
 }
