@@ -7,6 +7,7 @@
     <style>
         .container {
             background: #dedede;
+            /*min-height: 400px;*/
         }
 
         .box.b1, .box.b2, .box.b3 {
@@ -19,15 +20,54 @@
     </style>
 </head>
 <body>
+<h1>Rows, take space</h1>
     <div class="container">
-        <div class="b1 box grow">
+        <div class="b1 box">
             <h2>Box 1</h2>
         </div>
-        <div class="b2 box grow flexible">
+        <div class="b2 box">
             <h2>Box 2</h2>
-            <p>This should take more space than content on the left and right.<br>That's because multiple lines.</p>
+            <p>Hello mortals,<br>How do you do?</p>
         </div>
-        <div class="b3 box grow">
+        <div class="b3 box">
+            <h2>Box 3</h2>
+        </div>
+    </div>
+<h1>Rows, equal, container must have set height</h1>
+    <div class="container" style="min-height: 400px;">
+        <div class="b1 box equal">
+            <h2>Box 1</h2>
+        </div>
+        <div class="b2 box equal">
+            <h2>Box 2</h2>
+            <p>Hello mortals,<br>How do you do?</p>
+        </div>
+        <div class="b3 box equal">
+            <h2>Box 3</h2>
+        </div>
+    </div>
+<h1>Columns, take space as needed</h1>
+<div class="container columns">
+    <div class="b1 box">
+        <h2>Box 1</h2>
+    </div>
+    <div class="b2 box">
+        <h2>Box 2</h2>
+        <p>Hello mortals, >How do you do? Can you read this? If not, say HI!</p>
+    </div>
+    <div class="b3 box">
+        <h2>Box 3</h2>
+    </div>
+</div>
+<h1>Columns, first and second - same size, third is twice the size</h1>
+    <div class="container columns">
+        <div class="b1 box equal">
+            <h2>Box 1</h2>
+        </div>
+        <div class="b2 box equal">
+            <h2>Box 2</h2>
+        </div>
+        <div class="b3 box equal grow-2">
             <h2>Box 3</h2>
         </div>
     </div>

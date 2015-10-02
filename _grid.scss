@@ -3,37 +3,37 @@
 .container {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 
   &.reverse {
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
   }
 
-  &.vertical {
-    flex-direction: column;
+  &.columns {
+    flex-direction: row;
 
     &.reverse {
-      flex-direction: column-reverse;
+      flex-direction: row-reverse;
     }
+  }
+
+  &.equal {
+    flex-basis: 0;
   }
 }
 
 
 .box {
-  flex-basis: 0;
+  flex-basis: auto;
+  flex-grow: 1;
 
-  &.flexible {
-    flex-basis: auto;
+  &.equal {
+    flex-basis: 0;
   }
 
-  &.grow {
-    flex-grow: 1;
-  }
   @for $i from 1 through 12 {
     &.grow-#{$i} {
       flex-grow: $i;
-    }
-    &.shrink-#{$i} {
-      flex-shring: $i;
     }
   }
 }

@@ -1,68 +1,46 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,700italic,400italic);
 .container {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  flex-direction: column; }
   .container.reverse {
-    flex-direction: row-reverse; }
-  .container.vertical {
-    flex-direction: column; }
-    .container.vertical.reverse {
-      flex-direction: column-reverse; }
+    flex-direction: column-reverse; }
+  .container.columns {
+    flex-direction: row; }
+    .container.columns.reverse {
+      flex-direction: row-reverse; }
+  .container.equal {
+    flex-basis: 0; }
 
 .box {
-  flex-basis: 0; }
-  .box.flexible {
-    flex-basis: auto; }
-  .box.grow {
-    flex-grow: 1; }
+  flex-basis: auto;
+  flex-grow: 1; }
+  .box.equal {
+    flex-basis: 0; }
   .box.grow-1 {
     flex-grow: 1; }
-  .box.shrink-1 {
-    flex-shring: 1; }
   .box.grow-2 {
     flex-grow: 2; }
-  .box.shrink-2 {
-    flex-shring: 2; }
   .box.grow-3 {
     flex-grow: 3; }
-  .box.shrink-3 {
-    flex-shring: 3; }
   .box.grow-4 {
     flex-grow: 4; }
-  .box.shrink-4 {
-    flex-shring: 4; }
   .box.grow-5 {
     flex-grow: 5; }
-  .box.shrink-5 {
-    flex-shring: 5; }
   .box.grow-6 {
     flex-grow: 6; }
-  .box.shrink-6 {
-    flex-shring: 6; }
   .box.grow-7 {
     flex-grow: 7; }
-  .box.shrink-7 {
-    flex-shring: 7; }
   .box.grow-8 {
     flex-grow: 8; }
-  .box.shrink-8 {
-    flex-shring: 8; }
   .box.grow-9 {
     flex-grow: 9; }
-  .box.shrink-9 {
-    flex-shring: 9; }
   .box.grow-10 {
     flex-grow: 10; }
-  .box.shrink-10 {
-    flex-shring: 10; }
   .box.grow-11 {
     flex-grow: 11; }
-  .box.shrink-11 {
-    flex-shring: 11; }
   .box.grow-12 {
     flex-grow: 12; }
-  .box.shrink-12 {
-    flex-shring: 12; }
 
 body {
   font-family: "Roboto", sans-serif;
