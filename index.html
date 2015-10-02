@@ -5,9 +5,14 @@
     <title>App</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        body, html {
+            height: 100%;
+            min-height: 100%;
+        }
+
         .container {
             background: #dedede;
-            min-height: 500px;
+            min-height: 100%;
         }
 
         .box.b1, .box.b2, .box.b3 {
@@ -21,9 +26,7 @@
 </head>
 <body>
 
-<h1>Rows, take space</h1>
-
-<div class="container columns place-equal align-center">
+<div class="container columns place-equal">
     <div class="b1 box align-center">
         <h2>RED</h2>
     </div>
